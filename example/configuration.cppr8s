@@ -1,0 +1,24 @@
+treefile = /input/myxo.tre
+smooth = 100
+numsites = 246
+mrca = otu_outgroup otu_outgroup
+min = otu_outgroup 1
+max = otu_outgroup 100
+outfile = /input/best_tree_ultrametric.tree
+opt = 5
+[optad = 1]
+[optcvad = 2] [set the autodiff cross validation based optimizer]
+[cv] [designate that you want to do a cross validation analysis]
+[randomcv] [designate that you want to do random sampled cross validation]
+[cvoutfile = filename] [designate where you want the cross validation results to be printed, default = cv.out]
+[cvstart = number] [set where you want to start cross validation, default = 1000]
+[cvstop = number] [set where you want to stop cross validation, default = 0.1]
+nthreads = 2 [number of threads]
+[cviter = 2] [the number of cross validation total optimization iterations, default = 2]
+pliter = 2 [the number of penalized likelihood total optimization iterations, default = 2]
+[cvsimaniter = 5000] [the number of cross validation simulated annealing iterations, default = 5000]
+plsimaniter = 0 [the number of penalized likelihood simulated annealing iterations, default = 5000]
+[log_pen] [rate penalty will use log instead of additive function]
+seed = 42 [seed for random number generator, default = clock]
+thorough
+[prime]
