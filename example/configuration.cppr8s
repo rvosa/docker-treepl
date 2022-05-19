@@ -1,9 +1,9 @@
-treefile = /input/myxo.tre
+treefile = /input/myxo_97.7_rooted.tree
 smooth = 100
 numsites = 246
-mrca = otu_outgroup otu_outgroup
-min = otu_outgroup 1
-max = otu_outgroup 100
+mrca = myxo OTU_12087 OTU_5327
+min = myxo 1
+max = myxo 1
 outfile = /input/best_tree_ultrametric.tree
 opt = 5
 [optad = 1]
